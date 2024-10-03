@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Preahvihear"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/src/style/global.css" />
     <link rel="stylesheet" href="/src/style/styles.css" />
   </head>
   <body>
     <header>
       <div class="image">
-        <img src="" alt="Logo da Empresa" />
+        <img src="/src/assets/images/logo empresa.png" alt="Logo da Empresa" />
       </div>
       <div class="redirect-header">
         <a href="#">Início </a>
@@ -21,14 +25,16 @@
     </header>
     <div class="corpo">
       <div class="principal">
-        <div class="sub-foto">
-          <img src="" alt="perfil" />
-          <p>Olá! Eu sou Miguel Zacharias.</p>
-        </div>
-        <div class="title">
-          <h6>Um programador que</h6>
-          <h1>Está em busca do melhor código do mundo...</h1>
-          <p>e crescer profissionalmente.</p>
+        <div class="me">
+          <div class="sub-foto">
+            <img src="/src/assets/images/anonimo.jpg" alt="perfil" />
+            <div class="text">
+              <p class="name">--> Olá! Eu sou Miguel Zacharias.</p>
+              <h6>Um programador que</h6>
+              <h1>Está em busca do melhor código do mundo...</h1>
+              <p>e crescer profissionalmente.</p>
+            </div>
+          </div>
         </div>
         <div class="description-one">
           <h1>Eu sou programador.</h1>
@@ -89,9 +95,7 @@
         </div>
       </div>
       <div class="experiencias">
-        <h2>
-          Eu conheço algumas linguagens e tecnologias front-end
-        </h2>
+        <h2>Eu conheço algumas linguagens e tecnologias front-end</h2>
         <p>como meu principal objetivo é a experiência com o site</p>
 
         <div class="icon-container">
@@ -107,12 +111,10 @@
         <div class="contact-container">
           <h2>Contact</h2>
           <p>
-   Atualmente, estou buscando aprender e trabalhar mais nesse mercado.
-   Caso tenha interesse, entre em contato!
+            Atualmente, estou buscando aprender e trabalhar mais nesse mercado.
+            Caso tenha interesse, entre em contato!
           </p>
-          <a href="mailto:mzsilvaw@gmail.com"
-            >mzsilvaw@gmail.com</a
-          >
+          <a href="mailto:mzsilvaw@gmail.com">mzsilvaw@gmail.com</a>
 
           <div class="social-icons">
             <a href="https://instagram.com/miguelzackk" target="_blank">
@@ -134,7 +136,6 @@
               placeholder="Seu Nome.."
               required
             />
-
             <label for="email">Email</label>
             <input
               type="email"
@@ -143,7 +144,6 @@
               placeholder="Seu email.."
               required
             />
-
             <label for="subject">Assunto</label>
             <input
               type="text"
@@ -152,7 +152,6 @@
               placeholder="Assunto.."
               required
             />
-
             <label for="message">Mensagem</label>
             <textarea
               id="message"
@@ -161,7 +160,6 @@
               rows="6"
               required
             ></textarea>
-
             <button type="submit">Enviar</button>
           </form>
         </div>
