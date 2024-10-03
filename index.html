@@ -1,22 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/src/style/global.css" />
+    <link rel="stylesheet" href="/src/style/styles.css" />
+  </head>
+  <body>
     <header>
-        <img src="" alt="Logo da Empresa">
+      <div class="image">
+        <img src="" alt="Logo da Empresa" />
+      </div>
+      <div class="redirect-header">
         <a href="#">Início </a>
         <a href="#">Experiência</a>
         <a href="#">Portfólio</a>
         <a href="#">Contato</a>
+      </div>
     </header>
-    <div class="principal">
-        
+    <div class="corpo">
+      <div class="principal">
+        <div class="sub-foto">
+          <img src="" alt="perfil" />
+          <p>Olá! Eu sou Miguel Zacharias.</p>
+        </div>
+        <div class="title">
+          <h6>Um programador que</h6>
+          <h1>Está em busca do melhor código do mundo...</h1>
+          <p>e crescer profissionalmente.</p>
+        </div>
+        <div class="description-one">
+          <h1>Eu sou programador.</h1>
+          <p>Atualmente, sou estudante do Senai,</p>
+          <p>
+            Um novato na linguagem de prorgamação em front-end, buscando
+            aprender cada vez mais, ser um ótimo programador é um objetivo a ser
+            alcançado.
+          </p>
+        </div>
+      </div>
+      <div class="portfolio">
+        <h2>Portfólio</h2>
+        <div class="portfolio-item">
+          <div class="card-1">
+            <img src="star-icon.png" alt="Foto Projeto 1" />
+            <h3>The Dream Trip</h3>
+            <p>
+              Site que busca mostrar as culturas de diversos países do mundo,
+              demonstrando as varieades e as opções à turistas
+            </p>
+            <a href="https://github.com/miguelzackk/the-dream-trip" class="btn"
+              >Conheça Mais</a
+            >
+          </div>
+          <div class="card-1">
+            <img src="bulb-icon.png" alt="Bulb Icon" />
+            <h3>Possível Projeto</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              in culpa est error beatae illum doloribus libero, totam debitis
+              accusamus iusto necessitatibus, aspernatur delectus et eligendi
+              reprehenderit quaerat perspiciatis similique.
+            </p>
+            <a href="#" class="btn">Conheça Mais</a>
+          </div>
+          <div class="card-2">
+            <img src="magic-hat-icon.png" alt="Magic Hat Icon" />
+            <h3>Possível Projeto</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              quisquam enim velit eos officia porro iure rerum ut totam ullam?
+              Non cum possimus et quae fuga cumque nemo eos neque.
+            </p>
+            <a href="#" class="btn">Conheça Mais</a>
+          </div>
+          <div class="card-2">
+            <img src="rocket-icon.png" alt="Rocket Icon" />
+            <h3>Possível Projeto</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+              voluptates perferendis quia expedita tenetur, non debitis corrupti
+              consectetur ipsam, possimus excepturi. Voluptates, porro magni
+              doloribus atque suscipit quo rem pariatur?
+            </p>
+            <a href="#" class="btn">Conheça Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="experiencias">
+        <h2>
+          Eu conheço algumas linguagens e tecnologias front-end
+        </h2>
+        <p>como meu principal objetivo é a experiência com o site</p>
+
+        <div class="icon-container">
+          <img src="js-icon.png" alt="JavaScript" class="icon" />
+          <img src="css-icon.png" alt="CSS" class="icon" />
+        </div>
+
+        <div class="logo-container">
+          <img src="logo.png" alt="Logo" class="central-logo" />
+        </div>
+      </div>
+      <div class="featured-section">
+        <div class="contact-container">
+          <h2>Contact</h2>
+          <p>
+   Atualmente, estou buscando aprender e trabalhar mais nesse mercado.
+   Caso tenha interesse, entre em contato!
+          </p>
+          <a href="mailto:mzsilvaw@gmail.com"
+            >mzsilvaw@gmail.com</a
+          >
+
+          <div class="social-icons">
+            <a href="https://instagram.com/miguelzackk" target="_blank">
+              <img src="instagram-icon.png" alt="Instagram" />
+            </a>
+            <a href="https://github.com" target="_blank">
+              <img src="dribbble-icon.png" alt="GitHub" />
+            </a>
+          </div>
+        </div>
+        <div class="contact-content">
+          <h2>Fale conosco!</h2>
+          <form class="contact-form">
+            <label for="name">Nome</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Seu Nome.."
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Seu email.."
+              required
+            />
+
+            <label for="subject">Assunto</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Assunto.."
+              required
+            />
+
+            <label for="message">Mensagem</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message.."
+              rows="6"
+              required
+            ></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
