@@ -16,15 +16,16 @@
       <div class="image">
         <img src="/src/assets/images/logo empresa.png" alt="Logo da Empresa" />
       </div>
-      <div class="redirect-header">
-        <a href="#">Início </a>
+      <nav class="redirect-header">
+        <a href="#">Início</a>
         <a href="#">Experiência</a>
         <a href="#">Portfólio</a>
         <a href="#">Contato</a>
-      </div>
+      </nav>
     </header>
-    <div class="corpo">
-      <div class="principal">
+
+    <main class="corpo">
+      <section class="principal">
         <div class="me">
           <div class="sub-foto">
             <img src="/src/assets/images/anonimo.jpg" alt="perfil" />
@@ -40,74 +41,46 @@
           <h1>Eu sou programador.</h1>
           <p>Atualmente, sou estudante do Senai,</p>
           <p>
-            Um novato na linguagem de prorgamação em front-end, buscando
+            Um novato na linguagem de programação em front-end, buscando
             aprender cada vez mais, ser um ótimo programador é um objetivo a ser
             alcançado.
           </p>
         </div>
-      </div>
-      <div class="portfolio">
+      </section>
+      <section class="portfolio">
         <h2>Portfólio</h2>
         <div class="portfolio-item">
           <div class="card-1">
-            <img src="star-icon.png" alt="Foto Projeto 1" />
             <h3>The Dream Trip</h3>
             <p>
               Site que busca mostrar as culturas de diversos países do mundo,
-              demonstrando as varieades e as opções à turistas
+              demonstrando as variedades e as opções à turistas.
             </p>
-            <a href="https://github.com/miguelzackk/the-dream-trip" class="btn"
-              >Conheça Mais</a
-            >
-          </div>
-          <div class="card-1">
-            <img src="bulb-icon.png" alt="Bulb Icon" />
-            <h3>Possível Projeto</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              in culpa est error beatae illum doloribus libero, totam debitis
-              accusamus iusto necessitatibus, aspernatur delectus et eligendi
-              reprehenderit quaerat perspiciatis similique.
-            </p>
-            <a href="#" class="btn">Conheça Mais</a>
-          </div>
-          <div class="card-2">
-            <img src="magic-hat-icon.png" alt="Magic Hat Icon" />
-            <h3>Possível Projeto</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              quisquam enim velit eos officia porro iure rerum ut totam ullam?
-              Non cum possimus et quae fuga cumque nemo eos neque.
-            </p>
-            <a href="#" class="btn">Conheça Mais</a>
-          </div>
-          <div class="card-2">
-            <img src="rocket-icon.png" alt="Rocket Icon" />
-            <h3>Possível Projeto</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-              voluptates perferendis quia expedita tenetur, non debitis corrupti
-              consectetur ipsam, possimus excepturi. Voluptates, porro magni
-              doloribus atque suscipit quo rem pariatur?
-            </p>
-            <a href="#" class="btn">Conheça Mais</a>
+            <img
+              src="/src/assets/images/the-dream-trip.png"
+              alt="Foto Projeto 1"
+            />
+            
+              <a href="https://github.com/miguelzackk/the-dream-trip">
+                <div class="btn"><button>Conheça Mais</button></div></a>
+            
           </div>
         </div>
-      </div>
-      <div class="experiencias">
+      </section>
+
+      <section class="experiencias">
         <h2>Eu conheço algumas linguagens e tecnologias front-end</h2>
         <p>como meu principal objetivo é a experiência com o site</p>
-
         <div class="icon-container">
           <img src="js-icon.png" alt="JavaScript" class="icon" />
           <img src="css-icon.png" alt="CSS" class="icon" />
         </div>
-
         <div class="logo-container">
           <img src="logo.png" alt="Logo" class="central-logo" />
         </div>
-      </div>
-      <div class="featured-section">
+      </section>
+
+      <section class="featured-section">
         <div class="contact-container">
           <h2>Contact</h2>
           <p>
@@ -115,7 +88,6 @@
             Caso tenha interesse, entre em contato!
           </p>
           <a href="mailto:mzsilvaw@gmail.com">mzsilvaw@gmail.com</a>
-
           <div class="social-icons">
             <a href="https://instagram.com/miguelzackk" target="_blank">
               <img src="instagram-icon.png" alt="Instagram" />
@@ -156,14 +128,14 @@
             <textarea
               id="message"
               name="message"
-              placeholder="Write your message.."
+              placeholder="Escreva sua mensagem.."
               rows="6"
               required
             ></textarea>
             <button type="submit">Enviar</button>
           </form>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
