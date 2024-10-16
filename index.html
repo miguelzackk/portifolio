@@ -17,18 +17,18 @@
         <img src="/src/assets/images/logo empresa.png" alt="Logo da Empresa" />
       </div>
       <nav class="redirect-header">
-        <a href="#">Início</a>
-        <a href="#">Experiência</a>
-        <a href="#">Portfólio</a>
-        <a href="#">Contato</a>
+        <a href="#principal">Início</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#experiencias">Experiência</a>
+        <a href="#contato">Contato</a>
       </nav>
     </header>
 
     <main class="corpo">
-      <section class="principal">
+      <section id="principal" class="principal">
         <div class="me">
           <div class="sub-foto">
-            <img src="/src/assets/images/anonimo.jpg" alt="perfil" />
+            <img src="/src/assets/images/perfil.jfif" alt="perfil" />
             <div class="text">
               <p class="name">--> Olá! Eu sou Miguel Zacharias.</p>
               <h6>Um programador que</h6>
@@ -47,7 +47,7 @@
           </p>
         </div>
       </section>
-      <section class="portfolio">
+      <section id="portfolio" class="portfolio">
         <h2>Portfólio</h2>
         <div class="portfolio-item">
           <div class="card-1">
@@ -67,22 +67,19 @@
           </div>
         </div>
       </section>
-
-      <section class="experiencias">
-        <h2>Eu conheço algumas linguagens e tecnologias front-end</h2>
+      <div class="experiences">
+      <section id="experiencias" class="experiencias">
+                <h2>Eu conheço algumas linguagens e tecnologias front-end</h2>
         <p>como meu principal objetivo é a experiência com o site</p>
+      </div>
         <div class="icon-container">
-          <img src="js-icon.png" alt="JavaScript" class="icon" />
-          <img src="css-icon.png" alt="CSS" class="icon" />
-        </div>
-        <div class="logo-container">
-          <img src="logo.png" alt="Logo" class="central-logo" />
+          <img src="/src/assets/images/experiencias.png" alt="Minhas Linguagens" class="icon" />
         </div>
       </section>
 
-      <section class="featured-section">
+      <section id="contato" class="featured-section">
         <div class="contact-container">
-          <h2>Contact</h2>
+          <h2>Contato</h2>
           <p>
             Atualmente, estou buscando aprender e trabalhar mais nesse mercado.
             Caso tenha interesse, entre em contato!
@@ -90,15 +87,16 @@
           <a href="mailto:mzsilvaw@gmail.com">mzsilvaw@gmail.com</a>
           <div class="social-icons">
             <a href="https://instagram.com/miguelzackk" target="_blank">
-              <img src="instagram-icon.png" alt="Instagram" />
+              <img src="/src/assets/images/instagram logo.png" alt="Instagram" />
             </a>
             <a href="https://github.com" target="_blank">
-              <img src="dribbble-icon.png" alt="GitHub" />
+              <img src="/src/assets/images/logo-github.png" alt="GitHub"/>
             </a>
           </div>
         </div>
         <div class="contact-content">
           <h2>Fale conosco!</h2>
+          <div class="form">
           <form class="contact-form">
             <label for="name">Nome</label>
             <input
@@ -133,6 +131,7 @@
               required
             ></textarea>
             <button type="submit">Enviar</button>
+          </div>
           </form>
         </div>
       </section>
