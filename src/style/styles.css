@@ -3,12 +3,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #1a1a2e;
   height: 100px;
+  background-color: rgba(14, 11, 11, 0.534);
 }
 
 header .image img {
-  width: 150px;
+  width: 108px;
   height: auto;
 }
 
@@ -21,8 +21,6 @@ header .redirect-header a {
 }
 
 .corpo {
-  padding: 50px;
-  background-color: #0f0f1e;
   color: #fff;
   font-family: "Arial", sans-serif;
 }
@@ -35,7 +33,14 @@ header .redirect-header a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: rgb(2, 0, 3);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 3, 1) 26%,
+    rgba(29, 16, 203, 0.9612219887955182) 80%
+  );
 }
+
 .principal .sub-foto {
   display: flex;
   flex-direction: row;
@@ -181,10 +186,9 @@ a {
 }
 
 .icon-container img {
-width: 40%;
-height: auto;
+  width: 40%;
+  height: auto;
 }
-
 
 .contact-container {
   margin-top: 5%;
@@ -250,6 +254,6 @@ button:hover {
 
 .social-icons img {
   padding: 5px;
-width: 10%;
-height: auto;
+  width: 10%;
+  height: auto;
 }
