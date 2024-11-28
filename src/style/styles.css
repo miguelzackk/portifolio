@@ -12,9 +12,12 @@ header .image img {
   height: auto;
 }
 
-header .redirect-header a {
-  margin: 0 15px;
-  text-decoration: none;
+.nav-header {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-header a {
   color: #fff;
   font-size: 18px;
   font-weight: bold;
@@ -22,7 +25,6 @@ header .redirect-header a {
 
 .corpo {
   color: #fff;
-  font-family: "Arial", sans-serif;
 }
 
 .me {
@@ -99,11 +101,10 @@ header .redirect-header a {
   justify-content: center;
 }
 
-.subfoto img{
+.subfoto img {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .portfolio h2 {
@@ -125,26 +126,45 @@ header .redirect-header a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid white;
   border-radius: 5%;
-  width: 75%;
-  height: 100%;
+  width: 50%;
+  height: auto;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    3deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(144, 178, 205, 1) 77%,
+    rgba(140, 49, 182, 1) 100%
+  );
+  box-shadow: 10px 5px 5px black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  gap: 15px;
+  padding: 1%;
+  width: 800px;
+  height: 700px;
+}
+
+.card-1:hover {
+  transform: scale(1.1);
+  box-shadow: 15px 10px 10px black;
 }
 
 .card-1 h3 {
-  margin-top: 2%;
   font-size: 230%;
 }
 
 .card-1 p {
   font-size: 150%;
-  padding: 50px;
   text-align: center;
 }
 
 .card-1 img {
-  width: 70%;
-  height: 70%;
+  width: 90%;
+  height: auto;
+}
+
+.card-1 a {
+  color: white;
 }
 
 .card-2 {
@@ -152,51 +172,65 @@ header .redirect-header a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid white;
   border-radius: 5%;
-  width: 75%;
-  height: 100%;
+  width: 50%;
+  height: auto;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    3deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(144, 178, 205, 1) 77%,
+    rgba(140, 49, 182, 1) 100%
+  );
+  box-shadow: 10px 5px 5px black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  gap: 15px;
+  padding: 1%;
+  width: 800px;
+  height: 700px;
+}
+
+.card-2:hover {
+  transform: scale(1.1);
+  box-shadow: 15px 10px 10px black;
 }
 
 .card-2 h3 {
-  margin-top: 2%;
   font-size: 230%;
 }
 
 .card-2 p {
   font-size: 150%;
-  padding: 50px;
   text-align: center;
 }
 
 .card-2 img {
-  width: 70%;
-  height: 70%;
+  width: 90%;
+  height: auto;
+}
+
+.card-2 a {
+  color: white;
+}
+
+button.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover.portfolio {
+  background-color: #0056b3;
 }
 
 a {
   margin-top: 2%;
   margin-bottom: 2%;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-}
-.card-1 button {
-  border-radius: 10%;
-  color: white;
-  background-color: purple;
-  width: 400px;
-  height: 50px;
-  text-align: center;
-  position: relative;
-}
-
-.card-1 button::after {
-  content: " >";
-  font-weight: bold;
-  margin-left: 6px;
 }
 
 .experiences {
@@ -268,12 +302,11 @@ a {
 .form textarea {
   background-color: #f9f9f9;
 }
-.btn {
+
+button.form {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-button {
   padding: 12px;
   font-size: 1.1rem;
   background-color: #007bff;
@@ -281,7 +314,7 @@ button {
   border-radius: 5px;
 }
 
-button:hover {
+button:hover.form {
   background-color: #0056b3;
 }
 
@@ -290,7 +323,6 @@ button:hover {
   width: 10%;
   height: 10%;
 }
-
 
 @media (max-width: 1024px) {
   header {
@@ -319,7 +351,7 @@ button:hover {
   .principal .sub-foto img {
     width: 250px;
     height: auto;
-    margin-left: 0px;;
+    margin-left: 0px;
   }
 
   .sub-foto p.name {
@@ -328,7 +360,7 @@ button:hover {
     margin-bottom: 15px;
     margin-left: 0px;
   }
-  
+
   .text {
     display: flex;
     flex-direction: column;
@@ -370,8 +402,6 @@ button:hover {
     padding: 20px;
   }
 
-  
-
   .btn button {
     width: 90%;
     font-size: 1rem;
@@ -380,10 +410,7 @@ button:hover {
   .icon-container img {
     width: 60%;
   }
-
-
 }
-
 
 @media (max-width: 768px) {
   .me {
@@ -435,9 +462,7 @@ button:hover {
   .form {
     width: 95%;
   }
-
 }
-
 
 @media (max-width: 480px) {
   header {
@@ -471,6 +496,4 @@ button:hover {
   .icon-container img {
     width: 50%;
   }
-
-
 }
