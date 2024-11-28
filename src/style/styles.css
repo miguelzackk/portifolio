@@ -114,7 +114,7 @@ header .redirect-header a {
   font-size: 400%;
 }
 
-.portfolio-item {
+.portfolio-line1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -143,6 +143,33 @@ header .redirect-header a {
 }
 
 .card-1 img {
+  width: 70%;
+  height: 70%;
+}
+
+.card-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 5%;
+  width: 75%;
+  height: 100%;
+}
+
+.card-2 h3 {
+  margin-top: 2%;
+  font-size: 230%;
+}
+
+.card-2 p {
+  font-size: 150%;
+  padding: 50px;
+  text-align: center;
+}
+
+.card-2 img {
   width: 70%;
   height: 70%;
 }
@@ -342,6 +369,8 @@ button:hover {
     font-size: 120%;
     padding: 20px;
   }
+
+  
 
   .btn button {
     width: 90%;
