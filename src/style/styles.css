@@ -7,8 +7,25 @@ header {
   background-color: rgba(14, 11, 11, 0.534);
 }
 
-header .image img {
-  width: 108px;
+.image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.image p {
+  font-weight: bold;
+  color: white;
+  font-size: 150%;
+}
+
+.image span {
+  color: #0056b3;
+}
+
+.image img {
+  width: 50%;
   height: auto;
 }
 
@@ -44,8 +61,7 @@ header .image img {
 
 .sub-foto p.name {
   font-size: 20px;
-  margin-bottom: 15px;
-  margin-left: 25px;
+
 }
 
 .principal .sub-foto img {
@@ -234,12 +250,19 @@ a {
 }
 
 .experiences {
-  font-size: 130%;
   margin-top: 9%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.experiences h2 {
+  font-size: 150%;
+}
+
+.experiences p {
+  font-size: 120%;
 }
 
 .icon-container {
@@ -254,7 +277,6 @@ a {
 }
 
 .contact-container {
-  margin-top: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -263,13 +285,21 @@ a {
   font-size: 150%;
 }
 
+.contact-container h2 {
+  font-size: 170%;
+}
+
 .contact-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 2%;
   font-size: 150%;
+}
+
+.contact-content h2 {
+  font-size: 170%;
 }
 
 .form {
@@ -318,10 +348,27 @@ button:hover.form {
   background-color: #0056b3;
 }
 
-.social-icons img {
-  padding: 5px;
-  width: 10%;
-  height: 10%;
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.instagram {
+  width: 35px;
+  height: 35px;
+}
+
+.github {
+  width: 45px;
+  height: 45px;
+}
+
+.nav-header a:active {
+  transform: scale(0.9);
+  transition: transform 0.2s;
 }
 
 @media (max-width: 1024px) {

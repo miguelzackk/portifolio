@@ -286,9 +286,8 @@ header {
   }
   
   .social-icons img {
-    padding: 5px;
-    width: 10%;
-    height: 10%;
+display: flex;
+
   }
   
   
