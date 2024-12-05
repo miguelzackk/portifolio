@@ -4,38 +4,38 @@ header {
   align-items: center;
   padding: 20px 50px;
   background-color: rgba(14, 11, 11, 0.534);
-  position: relative; /* Necessário para o menu hambúrguer */
+  position: relative;
   z-index: 10;
 }
 
-.image {
+.logo {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-.image p {
+.logo p {
   font-weight: bold;
   color: white;
   font-size: 150%;
 }
 
-.image span {
+.logo span {
   color: #0056b3;
 }
 
-.image img {
+.logo img {
   width: 50%;
   height: auto;
 }
 
-.nav-header {
+.menu-links {
   display: flex;
   gap: 20px;
 }
 
-.nav-header a {
+.menu-links a {
   color: #fff;
   font-size: 18px;
   font-weight: bold;
@@ -378,6 +378,29 @@ button:hover.form {
   transition: transform 0.2s;
 }
 
+footer {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  font-weight: bold;
+  color: white;
+  font-size: 150%;
+}
+
+footer span {
+  color: #0056b3;
+}
+
+.logo img {
+  width: 50%;
+  height: auto;
+}
+
 @media (max-width: 1280px) {
   header {
     gap: 0px;
@@ -466,6 +489,12 @@ button:hover.form {
 }
 
 @media (max-width: 915px) {
+
+  main {
+    padding-top: 70px;
+  }
+
+
   .nav-header a {
     margin: 10px 0;
     font-size: 18px;
@@ -480,10 +509,10 @@ button:hover.form {
     align-items: center;
     background-color: rgba(14, 11, 11, 0.9);
     z-index: 10;
-    padding: 0 20px;
+    padding: 10px 20px;
   }
 
-  /* Logo e botão */
+
   .header-content {
     display: flex;
     align-items: center;
@@ -493,7 +522,7 @@ button:hover.form {
 
   .logo {
     display: flex;
-    align-items: center;
+       align-items: center;
     gap: 10px;
   }
 
@@ -502,13 +531,15 @@ button:hover.form {
   }
 
   .logo p {
-    font-size: 1.5rem;
+    width: 1700%;
+    font-size: 1.2rem;
     color: white;
   }
 
   .logo span {
     color: #0056b3;
   }
+
 
   .hamburger {
     display: flex;
@@ -530,11 +561,11 @@ button:hover.form {
     transition: all 0.3s ease;
   }
 
-  /* Menu lateral */
+ 
   .side-menu {
     position: fixed;
     top: 0;
-    left: -300px; /* Inicialmente fora da tela */
+    left: -300px;
     width: 250px;
     height: 100%;
     background: white;
@@ -549,7 +580,7 @@ button:hover.form {
   }
 
   .side-menu.active {
-    transform: translateX(300px); /* Mostra o menu parcialmente */
+    transform: translateX(300px);
   }
 
   .menu-links {
@@ -570,7 +601,7 @@ button:hover.form {
     color: #0056b3;
   }
 
-  /* Animação para hambúrguer */
+ 
   .hamburger.active span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
@@ -631,7 +662,7 @@ button:hover.form {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 630px) {
   header {
     padding: 5px 10px;
   }
@@ -644,8 +675,39 @@ button:hover.form {
     font-size: 14px;
   }
 
-  .card-1 p {
-    font-size: 14px;
+  .portfolio h2 {
+    padding-top: 10px;
+    font-size: 50px;
+  }
+
+
+  .card-1 {
+    width: 80%;
+  }
+
+    .card-1 h3 {
+      font-size: 35px;
+      text-align: center;
+    }
+
+
+  .card-2 p {
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .card-2 {
+    width: 80%;
+  }
+
+    .card-2 h3 {
+      font-size: 35px;
+      text-align: center;
+    }
+
+
+  .card-2 p {
+    font-size: 25px;
     padding: 10px;
   }
 
@@ -657,5 +719,36 @@ button:hover.form {
 
   .icon-container img {
     width: 50%;
+  }
+
+  .experiences {
+    font-size: 17px;
+  }
+
+  .icon-container img {
+    width: 100%;
+  }
+
+  .contact-container {
+    font-size: 25px;
+  }
+
+  .contact-container p {
+    font-size: 25px;
+    width: 100%;
+  }
+
+  .contact-form{
+    padding: 10px;
+  }
+
+footer img {
+  width: 30%;
+}
+
+  footer p {
+    font-weight: bold;
+    color: white;
+    font-size: 100%;
   }
 }
