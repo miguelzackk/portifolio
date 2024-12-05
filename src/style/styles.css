@@ -8,6 +8,17 @@ header {
   z-index: 10;
 }
 
+.section-hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .logo {
   display: flex;
   flex-direction: row;
@@ -39,6 +50,29 @@ header {
   color: #fff;
   font-size: 18px;
   font-weight: bold;
+  position: relative;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.menu-links a:hover {
+  color: #0056b3;
+  transform: scale(1.1);
+}
+
+.menu-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #0056b3;
+  transition: width 0.3s ease;
+}
+
+.menu-links a:hover::after {
+  width: 100%;
 }
 
 .corpo {
@@ -401,7 +435,27 @@ footer span {
   height: auto;
 }
 
+.description-one img {
+  padding-top: 30px;
+  width: 5%;
+  height: auto;
+  animation: moveUpDown 1s infinite ease-in-out;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
 @media (max-width: 1280px) {
+  body {
+    padding: 1px;
+  }
   header {
     gap: 0px;
     padding: 0px;
@@ -489,11 +543,9 @@ footer span {
 }
 
 @media (max-width: 915px) {
-
   main {
     padding-top: 70px;
   }
-
 
   .nav-header a {
     margin: 10px 0;
@@ -512,7 +564,6 @@ footer span {
     padding: 10px 20px;
   }
 
-
   .header-content {
     display: flex;
     align-items: center;
@@ -522,7 +573,7 @@ footer span {
 
   .logo {
     display: flex;
-       align-items: center;
+    align-items: center;
     gap: 10px;
   }
 
@@ -539,7 +590,6 @@ footer span {
   .logo span {
     color: #0056b3;
   }
-
 
   .hamburger {
     display: flex;
@@ -561,7 +611,6 @@ footer span {
     transition: all 0.3s ease;
   }
 
- 
   .side-menu {
     position: fixed;
     top: 0;
@@ -601,7 +650,6 @@ footer span {
     color: #0056b3;
   }
 
- 
   .hamburger.active span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
@@ -680,16 +728,14 @@ footer span {
     font-size: 50px;
   }
 
-
   .card-1 {
     width: 80%;
   }
 
-    .card-1 h3 {
-      font-size: 35px;
-      text-align: center;
-    }
-
+  .card-1 h3 {
+    font-size: 35px;
+    text-align: center;
+  }
 
   .card-2 p {
     font-size: 25px;
@@ -700,11 +746,10 @@ footer span {
     width: 80%;
   }
 
-    .card-2 h3 {
-      font-size: 35px;
-      text-align: center;
-    }
-
+  .card-2 h3 {
+    font-size: 35px;
+    text-align: center;
+  }
 
   .card-2 p {
     font-size: 25px;
@@ -738,13 +783,13 @@ footer span {
     width: 100%;
   }
 
-  .contact-form{
+  .contact-form {
     padding: 10px;
   }
 
-footer img {
-  width: 30%;
-}
+  footer img {
+    width: 30%;
+  }
 
   footer p {
     font-weight: bold;
